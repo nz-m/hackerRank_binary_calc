@@ -25,6 +25,11 @@ btnSum.addEventListener("click", () => {
   res.innerText += "+";
 });
 
+btnSum.addEventListener("click", () => {
+  if (res.innerText.includes("-")) return;
+  res.innerText += "-";
+});
+
 btnMul.addEventListener("click", () => {
   if (res.innerText.includes("*")) return;
   res.innerText += "*";
