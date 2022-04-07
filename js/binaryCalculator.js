@@ -6,6 +6,7 @@ let btnEql = document.getElementById("btnEql");
 let btnSum = document.getElementById("btnSum");
 let btnMul = document.getElementById("btnMul");
 let btnDiv = document.getElementById("btnDiv");
+let btnSub = document.getElementById("btnSub");
 
 let regxp = /[+*/-]/;
 
@@ -25,7 +26,7 @@ btnSum.addEventListener("click", () => {
   res.innerText += "+";
 });
 
-btnSum.addEventListener("click", () => {
+btnSub.addEventListener("click", () => {
   if (res.innerText.includes("-")) return;
   res.innerText += "-";
 });
